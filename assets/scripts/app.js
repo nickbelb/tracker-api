@@ -4,6 +4,11 @@ import * as utils from "./utils.js";
 
 const TOKEN ='pk.eyJ1Ijoibmljb2xhc2JlbHRyYW4yOCIsImEiOiJjbHExOWhwdnMwNzllMm1vNTR6YzBvZGZoIn0.78EqNgzYEAYWaQ6fcjxlkA'
 
+const options= {
+    enableHighAccuracy: true,
+    maximumAge: 0
+};
+
 
 function geoLocation(position){
     let latitude = position.coords.latitude;
@@ -30,7 +35,7 @@ function errorHandler(){
 }
 
 function setUpMap(){
-    const options={enableHighAccuracy: true};
+
     if('geolocation' in navigator){
         navigator.geolocation.watchPosition(geoLocation,errorHandler,options);
     }else{
