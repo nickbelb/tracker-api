@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+:root{
+    --app-font-general:'Outfit', sans-serif;
+    --app-button-color: #FE4F5A;
+    --white-color:#fff;
+    --default-border-radius: 5px;
+    --default-margin-top: 50px;
+    --default-h2-size:35px;
+    --app-footer-color: #F0F0F0;
+    --app-button-hover: #fe1423;
+    --default-border-radius: 5px;
+    --default-margin-top: 90px;
+}
+
+#map{
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-center-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
